@@ -147,3 +147,8 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = 'norielsg1214@gmail.com'
 EMAIL_HOST_PASSWORD = 'Disney2010'
 EMAIL_USE_TL = True
+
+try:
+    from local_settings import *
+except ImportError:
+    pass
