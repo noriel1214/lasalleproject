@@ -82,8 +82,8 @@ WSGI_APPLICATION = 'dp1.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'dp1db',
-        'USER':'postgres',
+        'NAME': 'lasalle_prod',
+        'USER':'dbadmin',
         'PASSWORD':'password',
         'HOST':'localhost'
     }
@@ -141,13 +141,7 @@ MESSAGE_TAGS ={
     messages.ERROR:'danger'
 }
 
-#Email config
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_HOST_USER = 'norielsg1214@gmail.com'
-EMAIL_HOST_PASSWORD = 'Disney2010'
-EMAIL_USE_TL = True
-
+    
 try:
     from local_settings import *
 except ImportError:
